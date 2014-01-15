@@ -22,7 +22,7 @@ How it works
 
 Checks
 ---------
-1. PHP Application must be connecting to mysql server via `127.0.0.1:3306` (not by localhost)
+1. PHP Application must be connecting to mysql server via `127.0.0.1:3306` (not by localhost, for more control update `<repo>/files/mysql-proxy.conf`)
 2. PHP application uses `mysqli` 
 3. Mysql server running on HOST-OS should allow remote connections [ comment the line specifying `bind-address` in `/etc/mysql/my.cnf`
 4. Database User used in application must have privelleges while connecting from remote hosts. (Check privelleges using PMA)
@@ -33,3 +33,18 @@ Checks
 
 Setup
 ------
+1. Clone this repo
+2. Update `<repo>/Vagrantfile` for changes required
+3. Update `<repo>/files/mysql-proxy.conf` for Host-IP and other requirements for database connection
+4. Run command `Vagrant up`
+5. Update `/etc/hosts` on Host by adding contents of `<repo>/files/hosts`
+6. Copy folder `<repo>/files/test` folder to `/var/www` and run [53|54|55].local.dev/php.php to test proper PHP version
+
+
+Debugging
+----------
+
+
+
+
+Thats it.
