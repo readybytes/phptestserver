@@ -16,6 +16,7 @@ echo "RB_PHP_VERSION_X = $RB_PHP_VERSION_X"
 
 # compile php version
 cd /usr/local/php/src
+sudo mkdir /vagrant/logs/
 sudo ./compile.sh $RB_PHP_VERSION_X_Y_Z  > /vagrant/logs/php-$version.log
 sudo /usr/local/php/inst/php-$version/bin/php-cgi -v
 

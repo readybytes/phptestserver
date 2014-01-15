@@ -1,3 +1,4 @@
-127.0.0.1   local.dev
-127.0.0.1   53.local.dev
-127.0.0.1   54.local.dev
+# add these lines to /etc/hosts in HOST-OS , NOT in VAGRANT-BOX
+33.33.33.10   53.local.dev
+33.33.33.10   54.local.dev
+33.33.33.10   55.local.dev
