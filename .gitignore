@@ -1,4 +1,6 @@
 .vagrant
+*~
 **/*~
 logs
 tmp
+files/php-bzips/*.bz2

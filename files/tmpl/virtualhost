@@ -1,0 +1,20 @@
+<VirtualHost *:80>
+  ServerName RB_PHP_VERSION_XY.local.dev
+  DocumentRoot /var/www
+
+  <FilesMatch "\.php$">
+    SetHandler application/x-httpd-php5
+  </FilesMatch>
+
+  ScriptAlias /php-fcgi /usr/lib/cgi-bin/phpRB_PHP_VERSION_XY.fcgi
+  Action application/x-httpd-php5 /php-fcgi
+  AddHandler application/x-httpd-php5 .php
+
+  <Directory "/var/www">
+	Options Indexes FollowSymLinks MultiViews
+	AllowOverride All
+	Order allow,deny
+	allow from all
+  </Directory>
+
+</VirtualHost>
