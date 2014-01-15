@@ -11,13 +11,13 @@ Tested on
 
 How it works
 ------------
-1. Your php source code is `/var/www`
+1. Your php source code is in `/var/www`
 2. `/var/www` folder is shared by vagrant-box and vagrant box serve same folders via different subdomains
 3. Vagrant box host 
     `53.local.dev` : PHP 5.3.27  version is served
     `55.local.dev` : PHP 5.4.23  version is served
     `55.local.dev` : PHP 5.5.7   version is served
-4. Vagrant box runs mysql-proxy, so php application running via box can connect to original mysql-servering running on host-os. In this way same database is used by application.
+4. Vagrant box runs mysql-proxy, so php application running via box can connect to original mysql-server running on host-os. In this way same database is used by application.
 
 
 Checks
