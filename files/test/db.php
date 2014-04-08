@@ -12,11 +12,11 @@ if ($mysqlnd || $mysql || $mysqli) {
    exit;
 }
 
-$db_host="127.0.0.1";
-$db_username="root";
-$db_password="password";
+$db_host="<ENTER-HOST-IP>";
+$db_username="<DB-USERNAME>";
+$db_password="<DB-PASSWORD>";
 echo "Testing $db_host ";
-if(mysqli_connect($db_host,$db_username,$db_password, "joomla311")){
+if(mysqli_connect($db_host,$db_username,$db_password, "<DATABASE-NAME>")){
  echo "Success";
 }else{
  echo "DB Connection failed";

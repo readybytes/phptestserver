@@ -21,4 +21,3 @@ Vagrant::Config.run do |config|
 
   config.vm.provision :shell, :path => "setup.sh"
 end
-
