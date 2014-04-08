@@ -32,13 +32,15 @@ Setup
 2. Go to `<repo>/Vagrantfile`
 3. Run command `Vagrant up`
 4. Update `/etc/hosts` on Host by adding contents of `<repo>/files/hosts`
-5. Test available PHP versions http://53.local.dev/test/php.php , http://54.local.dev/test/php.php, http://55.local.dev/test/php.php
+
 
 
 Debugging
 ----------
-
-
+Test available PHP versions 
+1. http://53.local.dev/test/php.php 
+2. http://54.local.dev/test/php.php
+3. http://55.local.dev/test/php.php
 
 
 Thats it.
