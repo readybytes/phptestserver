@@ -20,19 +20,19 @@ How it works
 
 Checks
 ---------
-1. Mysql server running on HOST-OS should allow remote connections [ comment the line specifying `bind-address` in `/etc/mysql/my.cnf`]
-2. Database User used in application must have privelleges while connecting from remote hosts. (Check privelleges using PMA)
-3. On host machine add subdomain definition mentions in `<repo>/files/hosts` file.
-4. You should use your `<HOST-OS>-IP-Address` in you application to connect to mysql server .
+1. Mysql server running on HOST-OS should allow remote connections [ comment the line specifying `bind-address` in `/etc/mysql/my.cnf`, http://stackoverflow.com/a/21151255]
+2. Database User used in application must have privelleges while connecting from remote hosts. (Check privelleges using PHP-My-Admin, http://stackoverflow.com/a/19359062)
+3. On host machine add subdomain definition mentions in `<repo>/files/hosts` file. (http://community.linuxmint.com/tutorial/view/159)
+4. You should use your `<HOST-OS>-IP-Address` in you application to connect to mysql server.
 
 
 Setup
 ------
 1. Clone this repo
-2. Update `<repo>/Vagrantfile` for changes required
+2. Go to `<repo>/Vagrantfile`
 3. Run command `Vagrant up`
 4. Update `/etc/hosts` on Host by adding contents of `<repo>/files/hosts`
-5. Copy folder `<repo>/files/test` folder to `/var/www` and run [53|54|55].local.dev/php.php to test proper PHP version
+5. Test available PHP versions http://53.local.dev/test/php.php , http://54.local.dev/test/php.php, http://55.local.dev/test/php.php
 
 
 Debugging
