@@ -37,10 +37,9 @@ Setup
 
 Debugging
 ----------
-Test available PHP versions 
-1. http://53.local.dev/test/php.php 
-2. http://54.local.dev/test/php.php
-3. http://55.local.dev/test/php.php
+1. PHP 5.3 : http://53.local.dev/test/php.php 
+2. PHP 5.4 : http://54.local.dev/test/php.php
+3. PHP 5.5 : http://55.local.dev/test/php.php
 
 
 Thats it.
